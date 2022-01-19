@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+    box-sizing: border-box;
+  }
+  body{
+    background: #161616;
+  }
+  body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:  linear-gradient(#f00,#f0f);;
+    clip-path: circle(30% at right 70%);
+}
+body::after{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3,#e91e63);
+    clip-path: circle(20% at 10% 10%);
+}
+  .box {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+  }
+  
+  .box select {
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background:  rgba(255, 255, 255, 0.1);
+    background: #2196f3;
+    color: black;
+  
+    height: 3rem;
+    width: 15rem;
+    padding: 10px;
+  
+    font-size: 16px;
+  
+    outline: none;
+    border: none;
+  
+    /* Important */
+    -webkit-appearance: button;
+    appearance: button;
+  
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  }
+  
+   .box::before {
+    content: "";
+    background-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3rem;
+    width: 3rem;
+    pointer-events: none;
+    text-align: center;
+    line-height: 3rem;
+    color: #fff;
+    font-size: 2rem;
+    font-family: "Font Awesome 5 Free";
+  }
+  
+  .box span i {
+    z-index: 1;
+    pointer-events: none;
+  
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+    height: 3rem;
+    width: 4rem;
+  
+    text-align: center;
+  
+    line-height: 3rem;
+  
+    background: rgb(216, 76, 216);
+    color: black;
+  
+    border-radius: 15px;
+
+    font-size: 2rem;
+  }
+ 
+  
